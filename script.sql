@@ -22,6 +22,17 @@ CREATE TABLE Promenades(
     descr VARCHAR(255),
 );
 
+
+SELECT * FROM Promenades WHERE id = $id
+
+
+
+        $pdoStatement->execute(array("idChien" => $id));  
+        
+        $resultatEx12 = $pdoStatement->fetchObject('Chien');
+
+        return $resultatEx12;
+
 INSERT INTO Promenades (`nom, `titre`, `img`, `pays`, `ville`, `zip`, `depart`, `arrivee`, `descr`)  
 VALUES (
     "La Plaine",
@@ -34,3 +45,4 @@ VALUES (
     "La Plaine",
     "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich."
 );
+

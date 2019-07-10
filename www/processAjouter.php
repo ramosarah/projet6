@@ -19,12 +19,8 @@ $ajout = $database->ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $d
 
 
 
-echo "\n N° id; ".$ajout."\n";
-
-
-
-//rediriger vers la page du nouveau chien
-//header('location: afficherUnChien.php?id='.$newDog);
+//echo "\n N° id; ".$ajout."\n";
+header('location: afficherPromenade.php?id='.$ajout);
 
 
 ?>

@@ -15,6 +15,7 @@ class Promenade {
     private $descr;
 
     public function __set($name, $value) {}
+
     public function getId() {return $this->id;}
     public function getNom() {return $this->nom;}
     public function getTitre() {return $this->titre;}

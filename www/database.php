@@ -33,7 +33,6 @@ class Database {
             "INSERT INTO Promenades(nom, titre, img, pays, ville, zip, depart, arrivee, descr)
             VALUES(:paramNom, :paramTitre, :paramImg, :paramPays, :paramVille, :paramZip, :paramDepart, :paramArrivee, :paramDescr)");
 
-
         $pdoStatement->execute(array(
         "paramNom"=>$nom,
         "paramTitre"=>$titre,
@@ -57,7 +56,21 @@ class Database {
 
 
    
+    public function afficherPromenade($id) {
+        $pdoStatement = $this->connexion->prepare(
+            "SELECT * FROM Promenades WHERE id = :idProm"
+        );
+    
+        
+        $pdoStatement->execute(array("idProm" => $id));  
+        
+        $promenade = $pdoStatement->fetchObject('promenade');
 
+        return $promenade;
+    
+    
+    
+    }
 
 }
 
