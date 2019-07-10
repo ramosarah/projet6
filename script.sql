@@ -22,15 +22,15 @@ CREATE TABLE Promenades(
     descr VARCHAR(255),
 );
 
-
-INSERT INTO Promenades VALUES (
+INSERT INTO Promenades (`nom, `titre`, `img`, `pays`, `ville`, `zip`, `depart`, `arrivee`, `descr`)  
+VALUES (
     "La Plaine",
     "Redécouverte de la Plaine",
-    "assets/laPlaine.jpg",
+    "assets/img/laPlaine.jpg",
     "Suisse",
     "Genève",
     1200,
     "Cornavin",
     "La Plaine",
-    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich.",
+    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich."
 );

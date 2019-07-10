@@ -28,10 +28,35 @@ class Database {
 
 
 
+    public function ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr) {
+        $pdoStatement = $this->connexion->prepare(
+            "INSERT INTO Promenades(nom, titre, img, pays, ville, zip, depart, arrivee, descr)
+            VALUES(:paramNom, :paramTitre, :paramImg, :paramPays, :paramVille, :paramZip, :paramDepart, :paramArrivee, :paramDescr)");
 
 
+        $pdoStatement->execute(array(
+        "paramNom"=>$nom,
+        "paramTitre"=>$titre,
+        "paramImg"=>$img, 
+        "paramPays"=>$pays, 
+        "paramVille"=>$ville,
+        "paramZip"=>$zip, 
+        "paramDepart"=>$depart, 
+        "paramArrivee"=>$arrivee,
+        "paramDescr"=>$descr));
+    
+
+        var_dump($pdoStatement->errorInfo());
 
 
+        $id = $this->connexion->lastInsertId();
+        return $id;
+    
+    
+    }
+
+
+   
 
 
 }
