@@ -10,22 +10,27 @@ GRANT ALL PRIVILEGES ON Promenades.* TO "adminProm"@"localhost";
 
 CREATE TABLE Promenades(
     
-    
-    private $id;
-    private $nom;
-    private $titre;
-    private $img;
-    private $pays;
-    private $ville;
-    private $zip;
-    private $depart;
-    private $arrivee;
-    private $desc;
-    
     id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(255),
-    titre VARCHAR(255)
-    img XXXXX,
-    id_maitre INT,
-    FOREIGN KEY (id_maitre) REFERENCES Maitres(id)
+    titre VARCHAR(255),
+    img VARCHAR(255),
+    pays VARCHAR(255),
+    ville VARCHAR(255),
+    zip INT,
+    depart VARCHAR(255),
+    arrivee VARCHAR(255),
+    descr VARCHAR(255),
+);
+
+
+INSERT INTO Promenades VALUES (
+    "La Plaine",
+    "Redécouverte de la Plaine",
+    "assets/laPlaine.jpg",
+    "Suisse",
+    "Genève",
+    1200,
+    "Cornavin",
+    "La Plaine",
+    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich.",
 );
