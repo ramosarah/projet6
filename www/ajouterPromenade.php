@@ -35,43 +35,67 @@ $database = new Database();
 
 
 
-        <!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
-        <form action="processAjouter.php" method="post">
+<!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
+        <div class="form">
+            <form action="processAjouter.php" method="post">
 
-            <label for="nom"> Nom de l'auteur</label>
-            <input type="text" name="nom" id="nom" require>
+            <div class="form-group">
+                <label for="nom"> Nom de l'auteur</label>
+                <input type="text" name="nom" id="nom" require>
+            </div>
 
-            <label for="titre">Titre de la promenade</label>
-            <input type="text" name="titre" id="titre" require>
-
-            <label for="img">URL de l'image</label>
-            <input type="text" name="img" id="img" require>
-
-            <label for="pays">Pays</label>
-            <input type="text" name="pays" id="pays" require>
-
-            <label for="ville">Ville</label>
-            <input type="text" name="ville" id="ville" require>
-
-            <label for="zip">Code Postal</label>
-            <input type="number" name="zip" id="zip" require>
-
-            <label for="depart">Lieu de départ</label>
-            <input type="text" name="depart" id="depart" require>
-
-            <label for="arrivee">Lieu d'arrivée</label>
-            <input type="text" name="arrivee" id="arrivee" require>
-
-            <label for="descr">Descriptif de la ballade</label>
-            <input type="texte" name="descr" id="descr">
+            <div class="form-group">
+                <label for="titre">Titre de la promenade</label>
+                <input type="text" name="titre" id="titre" require>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="img">URL de l'image</label>
+                <input type="text" name="img" id="img" require>
+            </div>
 
 
 
-            <input type="submit" value="Envoyer">
+            <div class="form-group">
+                <label for="pays">Pays</label>
+                <input type="text" name="pays" id="pays" require>
+            </div>
+
+            <div class="form-group">
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville" require>
+            </div>
 
 
+            <div class="form-group">
+                <label for="zip">Code Postal</label>
+                <input type="number" name="zip" id="zip" require>
+            </div>
 
-        </form>
+            <div class="form-group">
+                <label for="depart">Lieu de départ</label>
+                <input type="text" name="depart" id="depart" require>
+            </div>
+
+
+            <div class="form-group">
+                <label for="arrivee">Lieu d'arrivée</label>
+                <input type="text" name="arrivee" id="arrivee" require>
+            </div>
+
+            <div class="form-group">
+                <label for="descr">Descriptif de la ballade</label>
+                <input type="texte" name="descr" id="descr">
+            </div>
+
+            <div class="form->
+                <input type="submit" value="Envoyer">
+            </div>
+
+
+            </form>
+        </div>
 
 
 
