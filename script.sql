@@ -6,6 +6,18 @@ CREATE DATABASE Promenades;
 CREATE USER "adminProm"@"localhost" IDENTIFIED BY "adminPr0m";
 GRANT ALL PRIVILEGES ON Promenades.* TO "adminProm"@"localhost";
 
+"UPDATE Promenades SET 
+            nom = :nom,
+            titre = :titre,
+            img = :img,
+            pays = :pays,
+            ville = :ville,
+            zip = :zip,
+            depart = :depart
+            arrivee = :arrivee
+            WHERE id = :id" 
+
+
 
 
 CREATE TABLE Promenades(
@@ -43,6 +55,6 @@ VALUES (
     1200,
     "Cornavin",
     "La Plaine",
-    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich."
+    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich.""
 );
 

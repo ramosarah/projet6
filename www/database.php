@@ -71,6 +71,46 @@ class Database {
     
     }
 
+
+    public function modifierPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr){
+        $pdoStatement = $this->connexion->prepare(
+            "UPDATE Promenades SET 
+            nom = :nom,
+            titre = :titre,
+            img = :img,
+            pays = :pays,
+            ville = :ville,
+            zip = :zip,
+            depart = :depart,
+            arrivee = :arrivee,
+            descr = :descr,
+            WHERE id = :id"
+        );
+
+        $pdoStatement->exectute(array(
+            "nom"=>$nom,
+            "titre"=>$titre,
+            "img"=>$img,
+            "pays"=>$pays,
+            "ville"=>$ville,
+            "zip"=>$zip,
+            "depart"=>$depart,
+            "arrivee"=>$arrivee,
+            "descr"=>$descr)
+        );
+
+        $erreurCode = $pdoStatement->errorCode();
+
+        
+        if($erreurCode == 0) {
+            return true;
+        }else {
+            return false;
+        }
+
+    }
+
+
 }
 
 
