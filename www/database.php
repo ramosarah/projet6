@@ -45,7 +45,6 @@ class Database {
         "paramDescr"=>$descr));
     
 
-        var_dump($pdoStatement->errorInfo());
 
 
         $id = $this->connexion->lastInsertId();

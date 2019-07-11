@@ -86,9 +86,9 @@ $database = new Database();
                         <input class="form-group form-control-sm" type="text" name="arrivee" id="arrivee" require>
                     </div>
 
-                    <div>
+                    <div class="d-flex align-content-sm-start"> 
                         <label for="descr">Descriptif de la ballade</label>
-                        <input class="form-group form-control-sm" type="texte" name="descr" id="descr">
+                        <textarea class="form-group "  name="descr" id="descr" rows="10" cols="32"></textarea>
                     </div>
 
 
