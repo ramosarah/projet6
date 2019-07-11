@@ -2,7 +2,6 @@
 
 require_once "database.php";
 
-require_once "modifierPromenade.php";
 
 $database = new Database();
 $id = $_GET['id'];
@@ -26,19 +25,20 @@ $promenade = $database->afficherPromenade($id);
         <h1>La promenade </h1>
 
 
-        <?php
+        
+            <p>
+            <?php echo "La Promenade ".$promenade->getTitre()."  se déroule en ".$promenade->getPays()." dans la ville de ".$promenade->getVille()." dont le code postal est ".$promenade->getZip()." et on sait comment c'est utile!!"; ?> 
+            <?php echo "<br>"; ?>
+            <?php echo "Lieu de départ: ".$promenade->getDepart(); ?>
+            <?php echo "<br>"; ?>
+            <?php echo " Lieux d'arrivée: ".$promenade->getArrivee(); ?>
+            <?php echo "<br>"; ?>
+            <?php echo " Descriptif: ".$promenade->getDescr(); ?>
+            </p>
             
-            echo "La Promenade ".$promenade->getTitre()."  se déroule en ".$promenade->getPays()." dans la ville de ".$promenade->getVille()." dont le code postal est ".$promenade->getZip()." et on sait comment c'est utile!!"; 
-            echo "<br>";
-            echo "Lieu de départ: ".$promenade->getDepart();
-            echo "<br>";
-            echo " Lieux d'arrivée: ".$promenade->getArrivee();
-            echo "<br>";
-            echo " Descriptif: ".$promenade->getDescr();
-            
-        ?>
+        
 
-<a href="modifierPromenade.php?id=<?php echo $promenade->modifierPromenade();?>">mettre à jour</a>
+            <a href="modifierPromenade.php?id=<?php echo $promenade->getId();?>">mettre à jour</a>
 
 
 
