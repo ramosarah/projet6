@@ -29,10 +29,19 @@ $promenade = $database->afficherPromenade($id);
             <p>
             <?php echo "La Promenade ".$promenade->getTitre()."  se déroule en ".$promenade->getPays()." dans la ville de ".$promenade->getVille()." dont le code postal est ".$promenade->getZip()." et on sait comment c'est utile!!"; ?> 
             <?php echo "<br>"; ?>
+            </p>
+
+            <p>
             <?php echo "Lieu de départ: ".$promenade->getDepart(); ?>
             <?php echo "<br>"; ?>
+            </p>
+
+            <p>
             <?php echo " Lieux d'arrivée: ".$promenade->getArrivee(); ?>
             <?php echo "<br>"; ?>
+            </p>
+
+            <p>
             <?php echo " Descriptif: ".$promenade->getDescr(); ?>
             </p>
             

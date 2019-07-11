@@ -30,7 +30,7 @@ $database = new Database();
 
 
         
-        <h1 class="titre-form">Création d'une nouvelle promenade</h1>
+        <h1>Création d'une nouvelle promenade</h1>
 
 
 
