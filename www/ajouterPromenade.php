@@ -36,54 +36,59 @@ $database = new Database();
 
 
 <!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
+<!--<select class="form-control form-control-sm">-->
+    <!--La seconde main c'est avant tout la réutilisation d'un objet qui sans cette action serait en fin de vie. Par ses activités orientées réemploi, les ressourceries en économie sociale sont des acteurs importants de ce marché. -->
         <div class="container">
 
             <div class="row">
-                <form action="processAjouter.php" method="post">
+                <form action="processAjouter.php" method="post" enctype="multipart/form-data">
 
                     <div>
                         <label for="nom"> Nom de l'auteur</label>
-                        <input class="form-group form-control-sm" type="text" name="nom" id="nom" require>
+                        <input type="text" name="nom" id="nom" require>
                     </div>
 
                     <div>
                         <label for="titre">Titre de la promenade</label>
-                        <input class="form-group form-control-sm" type="text" name="titre" id="titre" require>
+                        <input type="text" name="titre" id="titre" require>
                     </div>
                     
                     
                     <div>
-                        <label for="img">URL de l'image</label>
-                        <input class="form-group form-control-sm" type="text" name="img" id="img" require>
+                        <label for="img">Image:</label>
+                        <input type="file" name="imgUp" id="img">
+                        <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, sont autorisés.</p>
                     </div>
+
+
 
 
 
                     <div>
                         <label for="pays">Pays</label>
-                        <input class="form-group form-control-sm" type="text" name="pays" id="pays" require>
+                        <input type="text" name="pays" id="pays" require>
                     </div>
 
                     <div>
                         <label for="ville">Ville</label>
-                        <input class="form-group form-control-sm" type="text" name="ville" id="ville" require>
+                        <input type="text" name="ville" id="ville" require>
                     </div>
 
 
                     <div>
                         <label for="zip">Code Postal</label>
-                        <input class="form-group form-control-sm" type="number" name="zip" id="zip" require>
+                        <input type="number" name="zip" id="zip" require>
                     </div>
 
                     <div>
                         <label for="depart">Lieu de départ</label>
-                        <input class="form-group form-control-sm" type="text" name="depart" id="depart" require>
+                        <input type="text" name="depart" id="depart" require>
                     </div>
 
 
                     <div>
                         <label for="arrivee">Lieu d'arrivée</label>
-                        <input class="form-group form-control-sm" type="text" name="arrivee" id="arrivee" require>
+                        <input type="text" name="arrivee" id="arrivee" require>
                     </div>
 
                     <div class="d-flex align-content-sm-start"> 
