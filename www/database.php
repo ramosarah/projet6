@@ -45,12 +45,8 @@ class Database {
         "paramDescr"=>$descr));
     
 
-
-
         $id = $this->connexion->lastInsertId();
         return $id;
-    
-    
     }
 
 
@@ -66,10 +62,12 @@ class Database {
         $promenade = $pdoStatement->fetchObject('promenade');
 
         return $promenade;
-    
-    
-    
     }
+
+
+
+
+
 
 
     public function modifierPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr){
@@ -107,10 +105,7 @@ class Database {
         }else {
             return false;
         }
-
     }
-
-
 }
 
 
