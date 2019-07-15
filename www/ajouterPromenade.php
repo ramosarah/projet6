@@ -43,61 +43,55 @@ $database = new Database();
             <div>
                 <form action="processAjouter.php" method="post" enctype="multipart/form-data">
 
-                <div>
-                    <label for="nom"> Nom de l'auteur</label>
-                    <input type="text" name="nom" id="nom" require>
-                </div>
+                    <div>
+                        <label for="nom"> Nom de l'auteur</label>
+                        <input class="form-group form-control-sm" type="text" name="nom" id="nom" require>
+                    </div>
 
-                <div>
-                    <label for="titre">Titre de la promenade</label>
-                    <input type="text" name="titre" id="titre" require>
-                </div>
-
-
-                <div>
-                    <label for="img">Image:</label>
-                    <input type="file" name="imgUp" id="img">
-                    <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, sont autorisés.</p>
-                </div>
-
-
+                    <div>
+                        <label for="titre">Titre de la promenade</label>
+                        <input class="form-group form-control-sm" type="text" name="titre" id="titre" require>
+                    </div>
+                    
+                    
+                    <div>
+                        <label for="img">Image:</label>
+                        <input class="form-group form-control-sm" type="file" name="imgUp" id="img">
+                        <p><strong>Note:</strong> Seuls les formats .jpg, .jpeg, sont autorisés.</p>
+                    </div>
 
 
 
-                <div>
-                    <label for="pays">Pays</label>
-                    <input type="text" name="pays" id="pays" require>
-                </div>
+                    <div>
+                        <label for="pays">Pays</label>
+                        <input class="form-group form-control-sm" type="text" name="pays" id="pays" require>
+                    </div>
 
-                <div>
-                    <label for="ville">Ville</label>
-                    <input type="text" name="ville" id="ville" require>
-                </div>
-
-
-                <div>
-                    <label for="zip">Code Postal</label>
-                    <input type="number" name="zip" id="zip" require>
-                </div>
-
-                <div>
-                    <label for="depart">Lieu de départ</label>
-                    <input type="text" name="depart" id="depart" require>
-                </div>
+                    <div>
+                        <label for="ville">Ville</label>
+                        <input class="form-group form-control-sm" type="text" name="ville" id="ville" require>
+                    </div>
 
 
-                <div>
-                    <label for="arrivee">Lieu d'arrivée</label>
-                    <input type="text" name="arrivee" id="arrivee" require>
-                </div>
+                    <div>
+                        <label for="zip">Code Postal</label>
+                        <input class="form-group form-control-sm" type="number" name="zip" id="zip" require>
+                    </div>
 
-                <div class="d-flex align-content-sm-start">
-                    <label for="descr">Descriptif de la ballade</label>
-                    <textarea class="form-group " name="descr" id="descr" rows="10" cols="32"></textarea>
-                </div>
+                    <div>
+                        <label for="depart">Lieu de départ</label>
+                        <input class="form-group form-control-sm" type="text" name="depart" id="depart" require>
+                    </div>
 
+                    <div>
+                        <label for="arrivee">Lieu d'arrivée</label>
+                        <input class="form-group form-control-sm" type="text" name="arrivee" id="arrivee" require>
+                    </div>
 
-
+                    <div class="d-flex align-content-sm-start"> 
+                        <label for="descr">Descriptif de la ballade</label>
+                        <textarea class="form-group"  name="descr" id="descr" rows="10" cols="32"></textarea>
+                    </div>
 
                 <div>
                     <input type="submit" value="Envoyer">
