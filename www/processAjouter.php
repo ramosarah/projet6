@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         if(!array_key_exists($ext, $attribution)) die("Erreur : Veuillez sélectionner un format de fichier valide.");
 
-        $maxTaille = 5 * 1024 * 1024;
+        $maxTaille = 2 * 1024 * 1024;
         if($tailleFichier > $maxTaille) die("Error: La taille du fichier est supérieure à la limite autorisée.");
 
 

@@ -24,8 +24,6 @@ $promenade = $database->afficherPromenade($id);
 
         <h1>Détail de la promenade sélectionnée</h1>
 
-        <p>
-        </p>
 
 
         <p>

@@ -5,7 +5,7 @@
 
     $database = new Database();
     $id = $_GET['id'];
-    var_dump($id);
+    
     $promenade = $database->afficherPromenade($id);
 
 ?>
@@ -27,9 +27,8 @@
         <h1>Veuillez faire des modifications nécessaires</h1>
 
 
-        <div class="container">
-
-        <div class="row">
+       
+        <div>
             <form action="processAjouter.php" method="post">
 
                 <div>
