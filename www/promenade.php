@@ -19,7 +19,7 @@ class Promenade {
     public function getId() {return $this->id;}
     public function getNom() {return $this->nom;}
     public function getTitre() {return $this->titre;}
-    public function getimg() {return $this->img;}
+    public function getImg() {return $this->img;}
     public function getPays() {return $this->pays;}
     public function getVille() {return $this->ville;}
     public function getZip() {return $this->zip;}

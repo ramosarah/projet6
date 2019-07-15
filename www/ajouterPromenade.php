@@ -37,10 +37,9 @@ $database = new Database();
 
 <!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
 <!--<select class="form-control form-control-sm">-->
-    <!--La seconde main c'est avant tout la réutilisation d'un objet qui sans cette action serait en fin de vie. Par ses activités orientées réemploi, les ressourceries en économie sociale sont des acteurs importants de ce marché. -->
-        <div class="container">
+        <div>
 
-            <div class="row">
+            <div>
                 <form action="processAjouter.php" method="post" enctype="multipart/form-data">
 
                     <div>
