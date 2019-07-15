@@ -3,8 +3,8 @@ CREATE DATABASE Promenades;
 
 
 
-CREATE USER "adminProm"@"localhost" IDENTIFIED BY "adminPr0m";
-GRANT ALL PRIVILEGES ON Promenades.* TO "adminProm"@"localhost";
+CREATE USER "adminProm"@"%" IDENTIFIED BY "adminPr0m";
+GRANT ALL PRIVILEGES ON Promenades.* TO "adminProm"@"%";
 
 UPDATE Promenades SET 
             nom = :nom,
@@ -31,7 +31,7 @@ CREATE TABLE Promenades(
     zip INT,
     depart VARCHAR(255),
     arrivee VARCHAR(255),
-    descr VARCHAR(255),
+    descr VARCHAR(255)
 );
 
 
@@ -45,7 +45,7 @@ SELECT * FROM Promenades WHERE id = $id
 
         return $resultatEx12;
 
-INSERT INTO Promenades (`nom, `titre`, `img`, `pays`, `ville`, `zip`, `depart`, `arrivee`, `descr`)  
+INSERT INTO Promenades (nom, titre, img, pays, ville, zip, depart, arrivee, descr)  
 VALUES (
     "La Plaine",
     "Redécouverte de la Plaine",
@@ -55,6 +55,6 @@ VALUES (
     1200,
     "Cornavin",
     "La Plaine",
-    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich.""
+    "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich."
 );
 

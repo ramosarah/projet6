@@ -28,9 +28,9 @@ require_once 'database.php';
 
 
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-lg overlay-image ">
-                <a href="/www/afficherPromenade.php">
+                <a href="afficherPromenade.php?id=2">
                     <img class="img-thumbnail" src="/assets/img/1.jpg" alt="Thumbnail image" />
                     <div class="normal">
                         <div class="text">Promenade 1</div>
@@ -42,7 +42,7 @@ require_once 'database.php';
                 </a></div>
 
             <div class="col-lg overlay-image ">
-                <a href="URL_LIEN">
+                <a href="afficherPromenade.php?id=2">
                     <img src="/assets/img/2.jpg" alt="Thumbnail image" class="img-thumbnail"/>
                     <div class="normal">
                         <div class="text">Promenade 2</div>
@@ -52,7 +52,7 @@ require_once 'database.php';
                     </div>
                 </a></div>
 
-            <div class="col-lg overlay-image"><a href="URL_LIEN">
+            <div class="col-lg overlay-image"><a href="afficherPromenade.php?id=2">
                     <img src="/assets/img/3.jpg" alt="Thumbnail image" class="img-thumbnail"/>
                     <div class="normal">
                         <div class="text">Promenade 3</div>
@@ -63,7 +63,7 @@ require_once 'database.php';
                     </div>
                 </a></div>
 
-            <div class="col-lg overlay-image "><a href="URL_LIEN">
+            <div class="col-lg overlay-image "><a href="afficherPromenade.php?id=2">
                     <img src="/assets/img/4.jpg" alt="Thumbnail image" class="img-thumbnail"/>
                     <div class="normal">
                         <div class="text">Promenade 4</div>
