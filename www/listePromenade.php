@@ -27,7 +27,7 @@ require_once 'database.php';
 
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row ">
             <div class="col-lg overlay-image ">
                 <a href="afficherPromenade.php?id=2">
