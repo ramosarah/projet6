@@ -48,9 +48,16 @@
     background-color: rgba(0,0,0,0.7);
 }
 
+.thumbnail img {
+    width: 164px;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* CSS de Sarah*/
 
 .titre-form {
     margin-left: 3%;
 }
+
 
