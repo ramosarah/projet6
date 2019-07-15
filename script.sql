@@ -6,7 +6,7 @@ CREATE DATABASE Promenades;
 CREATE USER "adminProm"@"localhost" IDENTIFIED BY "adminPr0m";
 GRANT ALL PRIVILEGES ON Promenades.* TO "adminProm"@"localhost";
 
-"UPDATE Promenades SET 
+UPDATE Promenades SET 
             nom = :nom,
             titre = :titre,
             img = :img,
@@ -15,7 +15,7 @@ GRANT ALL PRIVILEGES ON Promenades.* TO "adminProm"@"localhost";
             zip = :zip,
             depart = :depart
             arrivee = :arrivee
-            WHERE id = :id" 
+            WHERE id = :id
 
 
 
