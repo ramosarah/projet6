@@ -76,13 +76,15 @@
 
 
 /* CSS de Sarah*/
-.texte{
-    margin: 30px;
+.texte{    
     background-color: #ffffff;
     color: black;
     opacity: 0.6;
-    border: 1px solid black;
     text-align: center;
+    padding-top: 15%; 
+    padding-left: 25%; 
+    padding-bottom: 15%; 
+    padding-right: 25%;
 }
 
 
