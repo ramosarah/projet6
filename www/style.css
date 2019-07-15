@@ -54,10 +54,38 @@
     object-fit: cover;
 }
 
-/* CSS de Sarah*/
 
-.titre-form {
-    margin-left: 3%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS de Sarah*/
+.texte{
+    margin: 30px;
+    background-color: #ffffff;
+    color: black;
+    opacity: 0.6;
+    border: 1px solid black;
+    text-align: center;
 }
+
+
+
 
 
