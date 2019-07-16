@@ -2,19 +2,19 @@
     color: #e0e0e0!important;
     }
 
-.overlay-image {
+.card-img{
     position: relative;
     width: 100%;
     padding: 0px;
     }
-.overlay-image .image {
-    display: block;
+.card-img .image {
+    display: flex;
     padding: 0px;
     width: 100%;
     height: auto;
     }
     
-.overlay-image .text {
+.card-img .card-text {
     color: #fff;
     font-size: 30px;
     line-height: 1.5em;
@@ -26,7 +26,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     }
-.overlay-image .hover {
+.card-img .hover {
         position: absolute;
         top: 0;
         height: 100%;
@@ -35,23 +35,23 @@
         transition: .5s ease;
        }
        
-.overlay-image:hover .hover {
+.card-img:hover .hover {
         opacity: 0.5;
        }
-.overlay-image .normal {
+.card-img .normal {
     transition: .5s ease;
 }
-.overlay-image:hover .normal {
+.card-img:hover .normal {
     opacity: 0;
 }
-.overlay-image .hover {
+.card-img .hover {
     background-color: rgba(0,0,0,0.7);
 }
 
-.thumbnail img {
-    width: 164px;
+.thumbnail .card-img {
+    width: auto;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .carousel {

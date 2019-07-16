@@ -95,7 +95,7 @@ class Database {
             zip = :zip,
             depart = :depart,
             arrivee = :arrivee,
-            descr = :descr,
+            descr = :descr
             WHERE id = :id"
         );
 
@@ -121,7 +121,6 @@ class Database {
             return false;
         }
 
-        var_dump($pdoStatement->errorInfo());
     }
 }
 
