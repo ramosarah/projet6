@@ -26,13 +26,14 @@
                 </li>
                 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit">Search</button>
+            <form class="form-inline my-2 my-lg-0" action="search.php" method="GET">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="query">
+                <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit" value="Search" >Search</button>
             </form>
         </div>
     </nav>
 
+    
    
 
 
