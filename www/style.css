@@ -84,7 +84,17 @@
 
 
 /* CSS de Sarah*/
-.texte{    
+
+.form-bg {
+    background-color: lightskyblue;
+    font-family: 'JelleeRoman';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.texteAfficherPromenade{    
     background-color: #ffffff;
     color: black;
     opacity: 0.6;
@@ -95,6 +105,16 @@
     padding-right: 25%;
 }
 
+
+
+.NB {
+    font-size: 0.6em;
+}
+
+.textArea{
+    width:100%;
+    min-height: 200px;
+}
 
 
 
