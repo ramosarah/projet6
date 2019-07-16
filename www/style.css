@@ -1,8 +1,7 @@
+.nav a.white-text:hover {
+    color: #e0e0e0!important;
+    }
 
-.container{
-    margin: 0;
-    padding: 0;
-}
 .overlay-image {
     position: relative;
     width: 100%;
@@ -53,9 +52,6 @@
     width: 164px;
     height: 100%;
     object-fit: cover;
-}
-.nav a{
-    font-size: 40px;
 }
 
 .carousel {

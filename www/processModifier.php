@@ -34,9 +34,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
         if(in_array($typeFichier, $attribution)){
+            if(file_exists("upload/" . $_FILES["imgUp"]["name"])){
+                die($_FILES["imgUp"]["name"] . " existe déjà.");
+            } else{
                 $img_path = "upload/" . $_FILES["imgUp"]["name"];
                 move_uploaded_file($_FILES["imgUp"]["tmp_name"], $img_path);
-             
+            } 
         }else{
             die("Error: Il y a eu un problème de téléchargement de votre fichier. Veuillez réessayer.");
         }
@@ -46,8 +49,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 }
 
+//modifierPromenade($id, $nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)
 $database->modifierPromenade($id, $nom, $titre, $img_path, $pays, $ville, $zip, $depart, $arrivee, $descr);
-//header('location: afficherPromenade.php?id='.$id);
+header('location: afficherPromenade.php?id='.$id);
 
 
 ?>

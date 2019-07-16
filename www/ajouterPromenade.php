@@ -44,7 +44,6 @@ $database = new Database();
                 <form action="processAjouter.php" method="post" enctype="multipart/form-data">
 
                     <div>
-                        
                         <label for="nom"> Nom de l'auteur</label>
                         <input class="form-group form-control-sm" type="text" name="nom" id="nom" require>
                     </div>
