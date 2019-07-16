@@ -29,9 +29,10 @@
 
        
         <div>
-            <form action="processAjouter.php" method="post">
+            <form action="processModifier.php" method="post" enctype="multipart/form-data">
 
                 <div>
+                    <input type="hidden" name="id" value="<?php echo $promenade->getId() ?>">
                     <label for="nom"> Nom de l'auteur</label>
                     <input class="form-group form-control-sm" type="text" name="nom" id="nom" value="<?php echo $promenade->getNom() ?>" require>
                 </div>
@@ -43,8 +44,8 @@
                 
                 
                 <div>
-                    <label for="img">URL de l'image</label>
-                    <input class="form-group form-control-sm" type="text" name="img" id="img" value="<?php echo $promenade->getImg() ?>" require>
+                    <label for="img">Image</label>
+                    <input class="form-group form-control-sm" type="file" name="imgUp" id="img" value="<?php echo $promenade->getImg() ?>" require>
                 </div>
 
 

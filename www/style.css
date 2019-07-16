@@ -66,10 +66,40 @@
 
 
 
-/* CSS de Sarah*/
 
-.titre-form {
-    margin-left: 3%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS de Sarah*/
+.texte{    
+    background-color: #ffffff;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+    padding-top: 15%; 
+    padding-left: 25%; 
+    padding-bottom: 15%; 
+    padding-right: 25%;
 }
+
+
+
 
 

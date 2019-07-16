@@ -84,7 +84,7 @@ class Database {
 
 
 
-    public function modifierPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr){
+    public function modifierPromenade($id, $nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr){
         $pdoStatement = $this->connexion->prepare(
             "UPDATE Promenades SET 
             nom = :nom,
@@ -99,7 +99,7 @@ class Database {
             WHERE id = :id"
         );
 
-        $pdoStatement->exectute(array(
+        $pdoStatement->execute(array(
             "nom"=>$nom,
             "titre"=>$titre,
             "img"=>$img,
@@ -108,7 +108,8 @@ class Database {
             "zip"=>$zip,
             "depart"=>$depart,
             "arrivee"=>$arrivee,
-            "descr"=>$descr)
+            "descr"=>$descr,
+            "id"=>$id)
         );
 
         $erreurCode = $pdoStatement->errorCode();
