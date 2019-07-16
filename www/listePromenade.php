@@ -1,5 +1,8 @@
 <?php
 require_once 'database.php';
+$database= new Database;
+
+$promenade = $database->getAllprom();
 
 ?>
 
@@ -63,26 +66,27 @@ require_once 'database.php';
     <div class="container-fluid">
         <!-- Row -->
         <div class="row justify-content-around">
-            <?php foreach($promenade as $ballade){
+            <?php foreach ($promenade as $ballade) {
                 echo "<div class='col-lg-4 col-xs-1'>";
 
                 echo "<div class='card mb-5 mesBallades'>
-                <a href='afficherPromenade.php?id=".$ballade->getId()."'><img class='card-img-top' src='".$ballade->getImg()."'></a>
+                <a href='afficherPromenade.php?id=" . $ballade->getId() . "'><img class='card-img-top' src='" . $ballade->getImg() . "'></a>
                 <div class='card-body'>
-                <h2 class='card-title'>".$ballade->getTitre()."</h2>
-                <h4 class='card-title'>".$ballade->getPays()."</h4>
-                <h5 class='card-title'>".$ballade->getVille()."</h5>
-                <h6 class='card-title'>".$ballade->getNom()."</h6>
-                <h6 class='card-title'>".$ballade->getZip()."</h6>
-                <p class='card-text'>".$ballade->getDescr()."</p><br>
+                <h2 class='card-title'>" . $ballade->getTitre() . "</h2>
+                <h4 class='card-title'>" . $ballade->getPays() . "</h4>
+                <h5 class='card-title'>" . $ballade->getVille() . "</h5>
+                <h6 class='card-title'>" . $ballade->getNom() . "</h6>
+                <h6 class='card-title'>" . $ballade->getZip() . "</h6>
+                <p class='card-text'>" . $ballade->getDescr() . "</p><br>
                 </div>
-                </div></div>"
-                ;}
-                ?>
+                </div>
+                </div>";
+            }
+            ?>
         </div>
     </div>
 
-    
+
     <!-- Footer -->
     <footer class="page-footer font-small special-color-dark pt-4">
 
