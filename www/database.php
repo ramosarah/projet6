@@ -107,6 +107,8 @@ class Database {
         }else {
             return false;
         }
+
+        var_dump($pdoStatement->errorInfo());
     }
 }
 
