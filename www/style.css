@@ -86,10 +86,12 @@
 /* CSS de Sarah*/
 
 .form-bg {
-    background-color: lightskyblue;
+    background-color: lightblue;
     font-family: 'JelleeRoman';
-    font-weight: normal;
-    font-style: normal;
+}
+
+h1 {
+    text-align: center;
 }
 
 
