@@ -51,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 $ajout = $database->ajouterPromenade($nom, $titre, $img_path, $pays, $ville, $zip, $depart, $arrivee, $descr);
 
-//header('location: afficherPromenade.php?id='.$ajout);
+header('location: afficherPromenade.php?id='.$ajout);
 
 
 ?>

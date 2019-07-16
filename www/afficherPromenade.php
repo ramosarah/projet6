@@ -23,8 +23,7 @@ $promenade = $database->afficherPromenade($id);
             .imgBg{
                 background-image: url("<?php echo $promenade->getImg()?>");
                 background-size: cover;
-                background-position: center;
-                
+                background-position: center;                
             }
 
             
@@ -39,7 +38,7 @@ $promenade = $database->afficherPromenade($id);
         
 
 
-            <div class="texte">
+            <div class="texteAfficherPromenade">
                 <h1>Détail de la promenade sélectionnée</h1>
 
 

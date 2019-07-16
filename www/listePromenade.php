@@ -91,7 +91,7 @@ $promenade = $database->getAllprom();
     <footer class="page-footer font-small special-color-dark pt-4">
 
         <!-- Footer Elements -->
-        <div class="container">
+        <div class="container adele">
 
             <!--Grid row-->
             <div class="row">
