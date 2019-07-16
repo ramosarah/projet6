@@ -76,7 +76,7 @@ $promenade = $database->getAllprom();
 
                 echo "<div class='card bg-dark text-white mesBallades'>
                 <a href='afficherPromenade.php?id=" . $ballade->getId() . "'>
-                <img class='card-img overlay-image thumbnail' src='" . $ballade->getImg() . "'></a>
+                <img class='card-img overlay-image thumbnail' src='" . $ballade->getImg() . "'>
                 <div class='card-body card-img-overlay'>
                 <h2 class='card-title'>" . $ballade->getTitre() . "</h2>
                 <h4 class='card-title'>" . $ballade->getPays() . "</h4>
@@ -85,6 +85,7 @@ $promenade = $database->getAllprom();
                 <h6 class='card-title'>" . $ballade->getZip() . "</h6>
                 <p class='card-text text-white'>" . $ballade->getDescr() . "</p><br>
                 </div>
+                </a>
                 </div>
                 </div>";
             }
