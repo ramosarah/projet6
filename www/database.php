@@ -60,9 +60,22 @@ class Database {
         
         $pdoStatement->execute(array("idProm" => $id));  
         
-        $promenade = $pdoStatement->fetchObject('promenade');
+        $promenade = $pdoStatement->fetchObject('Promenade');
 
         return $promenade;
+    }
+
+    public function getAllprom()
+    {
+        $pdoStatement = $this->connexion->prepare(
+            "SELECT * from Promenades;"
+        );
+
+        $pdoStatement->execute();
+
+        $allProm = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Promenade');
+        return $allProm;
+
     }
 
 

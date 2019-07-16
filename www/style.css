@@ -1,3 +1,4 @@
+
 .container{
     margin: 0;
     padding: 0;
@@ -53,6 +54,17 @@
     height: 100%;
     object-fit: cover;
 }
+.nav a{
+    font-size: 40px;
+}
+
+.carousel {
+    width:auto; /*container-width*/
+    overflow:hidden; /*hide bounds of image */
+    height: 600px;
+}
+
+
 
 
 
