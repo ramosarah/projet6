@@ -1,10 +1,5 @@
-
-
-.intro-title{
-    color: white;
-    position: absolute ;
-    
-    z-index: 1;
+.card-body{
+    text-emphasis-color: white;
 }
 .carousel {
     
@@ -13,7 +8,7 @@
     height: 600px;
 }
 .logo{
-    height: 100px;
+    height: 70px;
 }
 #spinner{
     background: #4267b2;
@@ -22,9 +17,6 @@
     height: 40px;
     text-align: center;
     width: 250px;
-}
-.nav-link{
-    font-size: xx-large ;
 }
 
 

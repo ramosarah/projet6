@@ -43,8 +43,6 @@ $promenade = $database->searchBalade($search);
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-        <h1 class="intro-title text-center">Les Meilleures Promenades</h1>
-
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -79,17 +77,17 @@ $promenade = $database->searchBalade($search);
         <div class="row ">
             <?php foreach ($promenade as $ballade) { ?>
 
-                <div class="col-xl-3 col-lg-6 col-xs-12 view overlay zoom">
+                <div class="col-xl-3 col-lg-6 col-xs-12 view overlay zoom ">
 
-                    <div class='view overlay z-depth-1-half  mt-3 mb-3 '>
+                    <div class='view overlay z-depth-1-half mt-3 mb-3 '>
                         <a href='afficherPromenade.php?id=<?php echo $ballade->getId() ?>'>
                             <img class='card-img img-fluid hoverable' src='<?php echo $ballade->getImg() ?>'>
 
                             <div class='card-body card-img-overlay mask flex'>
-                                <h2 class='card-title'><?php echo $ballade->getTitre() ?></h2>
+                                <h1 class='card-title'><?php echo $ballade->getTitre() ?></h1>
                                 <h4 class='card-title'><?php echo $ballade->getPays() ?></h4>
-                                <h5 class='card-title'><?php echo $ballade->getVille() ?></h5>
-                                <h6 class='card-title'><?php echo $ballade->getNom() ?></h6>
+                                <h4 class='card-title'><?php echo $ballade->getVille() ?></h4>
+                                <h2 class='card-title'><?php echo "Auteur: ".$ballade->getNom() ?></h2>
                                 <h6 class='card-title'><?php echo $ballade->getZip() ?></h6>
                                 <p class='card-text text-white'><?php echo $ballade->getDescr() ?></p><br>
                             </div>

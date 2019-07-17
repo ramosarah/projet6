@@ -34,7 +34,7 @@ $promenade = $database->afficherPromenade($id);
 </head>
 
 <body class="form-bg">
-<?php
+    <?php
     include("header.php");
     ?>
 
@@ -50,9 +50,11 @@ $promenade = $database->afficherPromenade($id);
 
         <div class="texteAfficherPromenade">
 
-            <h1>Détail de la promenade sélectionnée</h1>
+            <h1>Détail de la promenade sélectionnée</h1><br>
 
-
+            <img style="width: 300px" class='img cover center' src='<?php echo $promenade->getImg() ?>'>
+            <br>
+            <br>
             <p>
                 <?php echo "La Promenade " . $promenade->getTitre() . "  se déroule en " . $promenade->getPays() . " dans la ville de " . $promenade->getVille() . " dont le code postal est " . $promenade->getZip() . " et on sait comment c'est utile!!"; ?>
                 <?php echo "<br>"; ?>
@@ -77,7 +79,7 @@ $promenade = $database->afficherPromenade($id);
 
 
 
-            
+
             <script>
                 var finished_rendering = function() {
                     console.log("finished rendering plugins");
@@ -91,7 +93,7 @@ $promenade = $database->afficherPromenade($id);
             <div id="spinner justify-content-center " style="">Loading
                 <div class="fb-login-button " data-max-rows="1" data-size="large" data-button-type="continue_with" data-use-continue-as="true"></div>
             </div>
-            
+
             <br>
             <br>
 
