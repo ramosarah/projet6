@@ -108,11 +108,11 @@ $promenade = $database->searchBalade($search);
 
                 <div class="col-xl-3 col-lg-6 col-xs-12 view overlay zoom ">
 
-                    <div class='view overlay z-depth-1-half mt-3 mb-3 '>
+                    <div class='view overlay z-depth-1-half mt-3 mb-3'>
                         <a href='afficherPromenade.php?id=<?php echo $ballade->getId() ?>'>
                             <img class='card-img img-fluid hoverable' src='<?php echo $ballade->getImg() ?>'>
 
-                            <div class='card-body card-img-overlay mask flex'>
+                            <div class='card-body card-img-overlay mask flex rgba-black-strong'>
                                 <h1 class='card-title'><?php echo $ballade->getTitre() ?></h1>
                                 <h4 class='card-title'><?php echo $ballade->getPays() ?></h4>
                                 <h4 class='card-title'><?php echo $ballade->getVille() ?></h4>

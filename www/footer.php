@@ -5,7 +5,7 @@
     <!-- Footer Elements -->
     <div class="container">
         <div class="row justify-content-around ">
-            <ul style="text-decoration:none">
+            <ul style="list-style-type: none">
                 <li>
                     <a class="navbar-brand logo text-white" href="index.php"><i class="fas fa-walking fa-3x"></i></a>
                     <a href="http://instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
