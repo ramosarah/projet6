@@ -33,7 +33,8 @@ $promenade = $database->searchBalade($search);
 </head>
 
 <body>
-    
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=1542907162467456&autoLogAppEvents=1"></script>
 
     <?php
     include("header.php");
@@ -79,7 +80,7 @@ $promenade = $database->searchBalade($search);
 
                 echo "<div class='card bg-dark text-white mesBallades'>
                 <a href='afficherPromenade.php?id=" . $ballade->getId() . "'>
-                <img class='card-img overlay-image thumbnail' src='" . $ballade->getImg() . "'>
+                <img class='card-img overlay-image' src='" . $ballade->getImg() . "'>
                 <div class='card-body card-img-overlay'>
                 <h2 class='card-title'>" . $ballade->getTitre() . "</h2>
                 <h4 class='card-title'>" . $ballade->getPays() . "</h4>

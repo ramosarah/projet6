@@ -1,20 +1,18 @@
-.nav a.white-text:hover {
-    color: #e0e0e0!important;
-    }
 
-.card-img{
+
+.overlay-image{
     position: relative;
     width: 100%;
     padding: 0px;
     }
-.card-img .image {
+.overlay-image .image {
     display: flex;
     padding: 0px;
     width: 100%;
     height: auto;
     }
     
-.card-img .card-text {
+.overlay-image .card-text {
     color: #fff;
     font-size: 30px;
     line-height: 1.5em;
@@ -26,7 +24,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     }
-.card-img .hover {
+.overlay-image .hover {
         position: absolute;
         top: 0;
         height: 100%;
@@ -35,20 +33,20 @@
         transition: .5s ease;
        }
        
-.card-img:hover .hover {
+.overlay-image:hover .hover {
         opacity: 0.5;
        }
-.card-img .normal {
+.overlay-image .normal {
     transition: .5s ease;
 }
-.card-img:hover .normal {
+.overlay-image:hover .normal {
     opacity: 0;
 }
-.card-img .hover {
+.overlay-image .hover {
     background-color: rgba(0,0,0,0.7);
 }
 
-.thumbnail .card-img {
+.thumbnail .overlay-image {
     width: auto;
     height: 100%;
     object-fit: contain;
@@ -61,6 +59,14 @@
 }
 .logo{
     height: 120px;
+}
+#spinner{
+    background: #4267b2;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    width: 250px;
 }
 
 

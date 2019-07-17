@@ -1,51 +1,50 @@
 <html>
-    <!-- Footer -->
-    <footer class="page-footer font-small purple-gradient pt-4">
+<!-- Footer -->
+<footer class="page-footer font-small purple-gradient pt-4">
 
-        <!-- Footer Elements -->
-        <div class="container">
+    <!-- Footer Elements -->
+    <div class="container">
 
-            <!--Grid row-->
-            <div class="row">
+        <!--Grid row-->
+        <div class="row">
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
 
-                    <!-- Form -->
-                    <form class="form-inline">
-                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                    </form>
-                    <!-- Form -->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-
-                    <form class="input-group">
-                        <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
-                        </div>
-                    </form>
-
-                </div>
-                <!--Grid column-->
+                <form class="form-inline my-2 my-lg-0" action="index.php" method="GET">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+                    <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit" value="search">Search</button>
+                </form>
 
             </div>
-            <!--Grid row-->
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+
+                <form class="input-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+                    </div>
+                </form>
+
+            </div>
+            <!--Grid column-->
 
         </div>
-        <!-- Footer Elements -->
+        <!--Grid row-->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright: Sarah & Adel<br>
-            <a href="https://Realise.ch"> Realise.ch</a>
-        </div>
-        <!-- Copyright -->
+    </div>
+    <!-- Footer Elements -->
 
-    </footer>
-    <!-- Footer -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Sarah & Adel<br>
+        <a href="https://Realise.ch"> Realise.ch</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
 </html>
