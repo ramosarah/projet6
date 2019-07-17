@@ -1,12 +1,13 @@
 <?php
 require_once 'database.php';
-
 $database = new Database;
 
-$promenade = $database->getAllprom();
-
-
-
+if (isset($_GET["search"])){
+    $search = $_GET["search"];
+}else{
+    $search = "";
+}
+$promenade = $database->searchBalade($search);
 ?>
 
 <!DOCTYPE html>

@@ -28,12 +28,13 @@ class Database {
 
     public function searchBalade($search){
 
+        $search = "%".$search."%";
+
         $pdoStatement = $this->connexion->prepare(
-        'SELECT * FROM Promenades WHERE descr LIKE "%:search1%" OR nom LIKE "%:search2%"'
+        'SELECT * FROM Promenades WHERE descr LIKE :search1 OR nom LIKE :search2'
 
         );
 
-        var_dump($search);
         $pdoStatement->execute([
             'search1' => $search,
             'search2' => $search
@@ -41,9 +42,6 @@ class Database {
 
         $search = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Promenade');
         return $search;
-
-        
-
     }
 
     public function ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr) {
