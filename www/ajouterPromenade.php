@@ -29,6 +29,9 @@ $database = new Database();
 
 
 <body class="form-bg">
+<?php
+    include("header.php");
+    ?>
 
     
     
@@ -109,7 +112,9 @@ $database = new Database();
 
 
 
-
+    <?php
+    include("footer.php");
+    ?>
 
 
 </body>
