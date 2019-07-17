@@ -1,3 +1,16 @@
+<?php
+require_once "database.php";
+
+if (isset($_GET["search"])){
+    $search = $_GET["search"];
+}else{
+    $search = "";
+}
+var_dump($search);
+$promenade = $database->searchBalade($search);
+var_dump($promenade);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -26,9 +39,9 @@
                 </li>
                 
             </ul>
-            <form class="form-inline my-2 my-lg-0" action="search.php" method="GET">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="query">
-                <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit" value="Search" >Search</button>
+            <form class="form-inline my-2 my-lg-0" action="index.php" method="GET">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-success text-white my-2 my-sm-0" type="submit" value="search" >Search</button>
             </form>
         </div>
     </nav>
@@ -49,23 +62,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-
-            $('.first-button').on('click', function() {
-
-                $('.animated-icon1').toggleClass('open');
-            });
-            $('.second-button').on('click', function() {
-
-                $('.animated-icon2').toggleClass('open');
-            });
-            $('.third-button').on('click', function() {
-
-                $('.animated-icon3').toggleClass('open');
-            });
-        });
-    </script>
+   
 </body>
 
 </html>
