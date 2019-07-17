@@ -34,7 +34,9 @@ $promenade = $database->afficherPromenade($id);
 </head>
 
 <body class="form-bg">
-
+<?php
+    include("header.php");
+    ?>
 
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=281666595767669&autoLogAppEvents=1"></script>
@@ -101,7 +103,9 @@ $promenade = $database->afficherPromenade($id);
 
     </div>
 
-
+    <?php
+    include("footer.php");
+    ?>
 
 </body>
 
