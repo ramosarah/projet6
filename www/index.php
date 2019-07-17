@@ -42,6 +42,9 @@ $promenade = $database->searchBalade($search);
 
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+        <div class="d-flex center"><h1 class="intro-title">Les Meilleures Promenades</h1></div>
+
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -78,7 +81,7 @@ $promenade = $database->searchBalade($search);
              
                 echo "<div class=' col-xl-3 col-lg-6 col-xs-12'>";
 
-                echo "<div class='card bg-dark text-white mesBallades'>
+                echo "<div class='card bg-dark text-white mt-3 mb-3 mask rgba-white-light'>
                 <a href='afficherPromenade.php?id=" . $ballade->getId() . "'>
                 <img class='card-img overlay-image' src='" . $ballade->getImg() . "'>
                 <div class='card-body card-img-overlay'>
