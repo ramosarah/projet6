@@ -20,9 +20,9 @@ $_SESSION['age'] = 24;
         Tu es à l'accueil de mon site TIPTOPProm aller sur une autre page ?
     </p>
     <p>
-        <a href="mapage.php">Lien vers mapage.php</a><br />
+        <a href="index.php">Lien vers mapage.php</a><br />
         <a href="monscript.php">Lien vers monscript.php</a><br />
-        <a href="informations.php">Lien vers informations.php</a>
+        <a href="phpinfo.php">Lien vers informations.php</a>
     </p>
     </body>
 </html>

@@ -9,5 +9,5 @@
     session_destroy ();
 
     // On redirige le visiteur vers la page d'accueil
-    header ('location: index.htm');
+    header ('location: index.php');
     ?>

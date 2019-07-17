@@ -58,3 +58,10 @@ VALUES (
     "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich."
 );
 
+CREATE Table Membres (
+    id int primary KEY auto_increment, 
+    pseudo varchar (255), 
+    pass varchar (255), 
+    email varchar (255), 
+    date_inscription date
+);
