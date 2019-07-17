@@ -4,7 +4,9 @@
 
     <!-- Footer Elements -->
     <div class="container">
-
+        <div class="row">
+            <img class="fa facebook" src="" alt="">
+        </div>
         <!--Grid row-->
         <div class="row">
 

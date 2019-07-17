@@ -43,7 +43,7 @@ $promenade = $database->searchBalade($search);
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         
-        <div class="d-flex center"><h1 class="intro-title">Les Meilleures Promenades</h1></div>
+        <h1 class="intro-title text-center">Les Meilleures Promenades</h1>
 
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -77,26 +77,26 @@ $promenade = $database->searchBalade($search);
     <div class="container-fluid">
         <!-- Row -->
         <div class="row ">
-            <?php foreach ($promenade as $ballade) {
+            <?php foreach ($promenade as $ballade) { ?>
              
-                echo "<div class=' col-xl-3 col-lg-6 col-xs-12'>";
+                <div class="col-xl-3 col-lg-6 col-xs-12 view overlay zoom">
 
-                echo "<div class='card bg-dark text-white mt-3 mb-3 mask rgba-white-light'>
-                <a href='afficherPromenade.php?id=" . $ballade->getId() . "'>
-                <img class='card-img overlay-image' src='" . $ballade->getImg() . "'>
+                <div class='view overlay z-depth-1-half  mt-3 mb-3 overlay-image'>
+                <a href='afficherPromenade.php?id=<?php echo $ballade->getId()?>'>
+                <img class='card-img overlay-image img-fluid hoverable' src='<?php echo $ballade->getImg()?>'>
+                
                 <div class='card-body card-img-overlay'>
-                <h2 class='card-title'>" . $ballade->getTitre() . "</h2>
-                <h4 class='card-title'>" . $ballade->getPays() . "</h4>
-                <h5 class='card-title'>" . $ballade->getVille() . "</h5>
-                <h6 class='card-title'>" . $ballade->getNom() . "</h6>
-                <h6 class='card-title'>" . $ballade->getZip() . "</h6>
-                <p class='card-text text-white'>" . $ballade->getDescr() . "</p><br>
+                <h2 class='card-title'><?php echo $ballade->getTitre() ?></h2>
+                <h4 class='card-title'><?php echo $ballade->getPays()?></h4>
+                <h5 class='card-title'><?php echo $ballade->getVille()?></h5>
+                <h6 class='card-title'><?php echo $ballade->getNom()?></h6>
+                <h6 class='card-title'><?php echo $ballade->getZip()?></h6>
+                <p class='card-text text-white'><?php echo $ballade->getDescr()?></p><br>
                 </div>
                 </a>
                 </div>
-                </div>";
-            }
-            ?>
+                </div>
+            <?php } ?>
         </div>
     </div>
 
