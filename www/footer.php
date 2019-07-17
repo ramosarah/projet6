@@ -41,8 +41,8 @@
         <!-- Footer Elements -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: Sarah & Adel<br>
+            <a href="https://Realise.ch"> Realise.ch</a>
         </div>
         <!-- Copyright -->
 

@@ -59,7 +59,9 @@
     overflow:hidden; /*hide bounds of image */
     height: 600px;
 }
-
+.logo{
+    height: 120px;
+}
 
 
 
