@@ -65,3 +65,10 @@ CREATE Table Membres (
     email varchar (255), 
     date_inscription date
 );
+
+CREATE TABLE `mysubscribers` (
+	`idEmail` mediumint(9) NOT NULL auto_increment,
+	`email` varchar(150) default NULL,
+	`name` varchar(150) default NULL,
+PRIMARY KEY  (`idEmail`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; 

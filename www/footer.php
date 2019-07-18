@@ -1,4 +1,8 @@
 <html>
+
+<head>
+    
+</head>
 <!-- Footer -->
 <footer class="page-footer font-small purple-gradient pt-4">
 
@@ -9,7 +13,7 @@
                 <li>
                     <a class="navbar-brand logo text-white" href="index.php"><i class="fas fa-walking fa-3x"></i></a>
                     <a href="http://instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
-                    <a href="http://instagram.com"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="http://facebook.com"><i class="fab fa-facebook fa-3x"></i></a>
                 </li>
             </ul>
         </div>
@@ -30,13 +34,29 @@
 
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-
-                <form class="input-group">
-                    <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+                <!-- THE FORM: COPY FROM HERE-->
+                <form onsubmit="return signup(this);return false;" method="post" name="subform" id="subform" action="optIn.php">
+                    <div><span style="FONT-FAMILY: Arial; FONT-SIZE: 12pt; font-weight:bold;">Subscribe to our newsletter</span></div>
+                    <div style="margin-top:20px">
+                        <div>
+                            <label style="display: inline-block;width:135px">Email:</label>
+                            <input type="email" required id="email" name="email" value="">
+                        </div>
+                        <div>
+                            <label style="display: inline-block;width:135px">Name:</label>
+                            <input type="text" required name="name" id="name" value="">
+                        </div>
+                        <div>
+                            <div style="display:inline-block;width:135px;">&nbsp;</div>
+                            <input type="submit" id="submit" name="submit" value="Sign up">
+                        </div>
+                        <div style="width:100%"><span id="Error" style="color:red;display:none;"></span></div>
+                        <div id="myResponse" style="DISPLAY:none;"></div>
+                        <div id="loading" style="display:none;"><img src="wait.gif" alt=""></div>
                     </div>
                 </form>
+                <!-- END OF FORM: STOP HERE. -->
+
 
             </div>
             <!--Grid column-->
