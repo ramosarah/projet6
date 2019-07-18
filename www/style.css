@@ -18,42 +18,19 @@
     text-align: center;
     width: 250px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body{
+font-family: 'JelleeRoman';
+}
 
 
 /* CSS de Sarah*/
-
 .form-bg {
     background-color: lightblue;
     font-family: 'JelleeRoman';
 }
-
 h1 {
     text-align: center;
 }
-
-
-
 .texteAfficherPromenade{    
     background-color: #ffffff;
     color: black;
@@ -64,13 +41,9 @@ h1 {
     padding-bottom: 10%; 
     padding-right: 25%;
 }
-
-
-
 .NB {
     font-size: 0.6em;
 }
-
 .textArea{
     width:100%;
     min-height: 200px;
