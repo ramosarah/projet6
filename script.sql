@@ -35,6 +35,22 @@ CREATE TABLE Promenades(
 );
 
 
+CREATE TABLE Membres(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255),
+    email VARCHAR(255),
+    pass VARCHAR(255)
+)
+
+
+INSERT INTO Membres (nom, email, pass) VALUE (
+    "Sophie",
+    "sophie@lechoix.com",
+    "lacroixdesophie"
+);
+
+
+
 SELECT * FROM Promenades WHERE id = $id
 
 
@@ -56,12 +72,4 @@ VALUES (
     "Cornavin",
     "La Plaine",
     "La Plaine est un village de Suisse. Situé sur le territoire de la commune de Dardagny dans le canton de Genève, sur la rive droite du Rhône, il est le lieu de l'une des usines du groupe Firmenich."
-);
-
-CREATE Table Membres (
-    id int primary KEY auto_increment, 
-    pseudo varchar (255), 
-    pass varchar (255), 
-    email varchar (255), 
-    date_inscription date
 );
