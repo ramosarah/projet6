@@ -94,14 +94,15 @@ class Database {
         $pdoStatement = $this->connexion->prepare(
             "SELECT * FROM Promenades WHERE id = :idProm"
         );
-    
-        
+
         $pdoStatement->execute(array("idProm" => $id));  
         
         $promenade = $pdoStatement->fetchObject('Promenade');
 
         return $promenade;
     }
+
+    
 
     public function getAllprom()
     {

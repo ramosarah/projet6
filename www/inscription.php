@@ -46,8 +46,8 @@ $database = new Database();
         </div>
 
         <div class="form-group">
-            <label for="pass">Votre E-Mail</label>
-            <input class="form-control" type="pass" name="pass" id="pass" require>
+            <label for="password">Votre Mot de passe</label>
+            <input class="form-control" type="password" name="pass" id="pass" require>
         </div>
 
 
