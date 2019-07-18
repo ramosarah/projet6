@@ -1,5 +1,3 @@
-
-
 <?php
 require_once 'database.php';
 $database = new Database;
@@ -89,7 +87,7 @@ $promenade = $database->searchBalade($search);
                                 <h1 class='card-title'><?php echo $ballade->getTitre() ?></h1>
                                 <h4 class='card-title'><?php echo $ballade->getPays() ?></h4>
                                 <h4 class='card-title'><?php echo $ballade->getVille() ?></h4>
-                                <h2 class='card-title'><?php echo "Auteur: ".$ballade->getNom() ?></h2>
+                                <h2 class='card-title'><?php echo "Auteur: " . $ballade->getNom() ?></h2>
                                 <h6 class='card-title'><?php echo $ballade->getZip() ?></h6>
                                 <p class='card-text text-white'><?php echo $ballade->getDescr() ?></p><br>
                             </div>

@@ -33,13 +33,13 @@ $database = new Database();
 
 
 <body class="form-bg">
-<?php
+    <?php
     include("header.php");
     ?>
 
 
-<!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
-<!--<select class="form-control form-control-sm">-->
+    <!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
+    <!--<select class="form-control form-control-sm">-->
     <div class="container">
         <div class="row justify-content-center">
             <h1>Création d'une nouvelle promenade</h1>
@@ -57,8 +57,8 @@ $database = new Database();
                     <label for="titre">Titre de la promenade</label>
                     <input class="form-control" type="text" name="titre" id="titre" require>
                 </div>
-                
-                
+
+
                 <div class="form-group col-sm-12">
                     <label for="img">Image:</label>
                     <input class="form-control-file" type="file" name="imgUp" id="img">
@@ -93,7 +93,7 @@ $database = new Database();
                     <input class="form-control" type="text" name="arrivee" id="arrivee" require>
                 </div>
 
-                <div class="form-group col-sm-12"> 
+                <div class="form-group col-sm-12">
                     <label for="descr">Descriptif de la ballade</label>
                     <textarea name="descr" id="descr" class="textArea"></textarea>
                 </div>
@@ -103,7 +103,7 @@ $database = new Database();
                 <div class="form-group col-sm-12">
                     <button type="submit" class="btn btn-primary mb-2">Envoyer nouvelle promenade</button>
                 </div>
-                
+
 
             </form>
         </div>
