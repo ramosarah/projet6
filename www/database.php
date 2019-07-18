@@ -134,25 +134,7 @@ class Database {
         }
         
         }
-        public function getimgbyId(){
-            $pdoStatement = $this->connexion->prepare(
-                "SELECT id, img as id, image
-                FROM Promenades
-                
-                WHERE id = :id"
-            );
+
     
-            // J'exécute la requete
-            $pdoStatement->execute(
-                array(
-                    "id" => $id
-                    "img"=> $image)
-            );
-    
-            // Je recupere et je stocke le resultat
-            $lastProm = $pdoStatement->fetchObject("Promenades");
-            //var_dump($monChien);
-            return $lastProm;
-        }
     }
 ?>

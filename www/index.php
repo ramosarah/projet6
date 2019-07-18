@@ -1,31 +1,4 @@
-<?php
-// On démarre la session AVANT d'écrire du code HTML
-session_start();
 
-// On s'amuse à créer quelques variables de session dans $_SESSION
-$_SESSION['prenom'] = 'Jean';
-$_SESSION['nom'] = 'Dupont';
-$_SESSION['age'] = 24;
-?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Titre de ma page</title>
-    </head>
-    <body>
-    <p>
-        Salut <?php echo $_SESSION['prenom']; ?> !<br />
-        Tu es à l'accueil de mon site TIPTOPProm aller sur une autre page ?
-    </p>
-    <p>
-        <a href="index.php">Lien vers mapage.php</a><br />
-        <a href="monscript.php">Lien vers monscript.php</a><br />
-        <a href="phpinfo.php">Lien vers informations.php</a>
-    </p>
-    </body>
-</html>
 
 <?php
 require_once 'database.php';
@@ -79,14 +52,14 @@ $promenade = $database->searchBalade($search);
         </ol>
         <div class="carousel-inner ">
             <div class="carousel-item active">
-                <a href="afficherPromenade.php?id=<?php echo $promenade->lastInsert()?>">
+                <a href="afficherPromenade.php?id=2">
                     <img class="d-block w-100 img-fluid hoverable" src="/assets/img/1.jpg" alt="First slide">
                 </a></div>
             <div class="carousel-item">
                 <img class="d-block w-100 img-fluid hoverable" src="/assets/img/2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-fluid hoverable" src="/assets/img/3.jpg" alt="Third slide">
+                <img class="d-block w-100 " src="/assets/img/3.jpg" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -101,7 +74,7 @@ $promenade = $database->searchBalade($search);
 
 
     <!-- Main -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="liste">
         <!-- Row -->
         <div class="row ">
             <?php foreach ($promenade as $ballade) { ?>
@@ -140,9 +113,6 @@ $promenade = $database->searchBalade($search);
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
-
-
-
 </body>
 
 </html>
