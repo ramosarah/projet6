@@ -1,10 +1,13 @@
+.body{
+    font-size:5px;
+}
 .titre{
     display: flex;
     position: absolute ;
     padding: 200px;
     color: White;
-    font-family: roboto;
-    font-size: 5rem;
+    font-family: 'bakery';
+    font-size: 9em;
     z-index: 1;
 }
 

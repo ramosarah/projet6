@@ -19,6 +19,16 @@ $promenade = $database->searchBalade($search);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liste Promenades</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "bakery";
+            src: url(/assets/font/bakery.ttf) format("truetype");
+        }
+
+        p.customfont {
+            font-family: "Bakery", Verdana, Tahoma;
+        }
+    </style>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -43,7 +53,7 @@ $promenade = $database->searchBalade($search);
     <!-- carousel -->
 
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-        <h1 class="titre text-center" style="">Les plus belles Promenades</h1>
+        <h1 class="customfont titre text-center" style="">Les plus belles Promenades</h1>
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
