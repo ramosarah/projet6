@@ -11,7 +11,7 @@ require_once "database.php";
         </button>
         <div class="collapse navbar-collapse ml-5 " id="navbarTogglerDemo01">
             <a class="navbar-brand logo text-white ml-5" href="index.php?liste"><i class="fas fa-walking fa-3x"></i></a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active ">
                     <a class="nav-link text-white ml-5" href="index.php?#liste"><i class="fas fa-th-list"></i>Liste des promenades<span class="sr-only">(current)</span></a>
                 </li>

@@ -1,5 +1,10 @@
 .card-body{
+    color: blueviolet;
     text-emphasis-color: white;
+}
+.nav-item  {
+    font-size: 1.5rem;
+
 }
 .carousel {
     
@@ -18,7 +23,9 @@
     text-align: center;
     width: 250px;
 }
-
+.addProm{
+    color: white;
+}
 
 
 /* CSS de Sarah*/
@@ -31,7 +38,7 @@ h1 {
 }
 .texteAfficherPromenade{    
     background-color: #ffffff;
-    color: black;
+    color: blueviolet;
     opacity: 0.7;
     text-align: center;
     padding-top: %; 

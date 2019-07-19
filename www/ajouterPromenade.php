@@ -41,8 +41,8 @@ $database = new Database();
 
     <!--ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr)-->
     <!--<select class="form-control form-control-sm">-->
-    <div class="container ">
-        <div class="col-xl-12 mt-5 mb-5 justify-content-center ">
+    <div class="container addProm">
+        <div class="col-xl-12 mt-5 mb-5 justify-content-center">
             <h1 style="">Création d'une nouvelle promenade</h1>
 
 
