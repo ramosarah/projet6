@@ -11,9 +11,9 @@
         <div class="row justify-content-around ">
             <ul style="list-style-type: none">
                 <li>
-                    <a class="navbar-brand logo text-white" href="index.php"><i class="fas fa-walking fa-3x"></i></a>
-                    <a href="http://instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
-                    <a href="http://facebook.com"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a class="navbar-brand logo text-white" href="index.php"><i class="fas fa-walking fa-3x mr-5"></i></a>
+                    <a href="http://instagram.com"><i class="fab fa-instagram fa-3x mr-5"></i> </a>
+                    <a href="http://facebook.com"> <i class="fab fa-facebook fa-3x mr-5"></i></a>
                 </li>
             </ul>
         </div>

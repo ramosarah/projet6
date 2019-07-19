@@ -18,15 +18,13 @@
     text-align: center;
     width: 250px;
 }
-body{
-font-family: 'JelleeRoman';
-}
+
 
 
 /* CSS de Sarah*/
-.form-bg {
+ .form-bg {
     background-color: lightblue;
-    font-family: 'JelleeRoman';
+    
 }
 h1 {
     text-align: center;
