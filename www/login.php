@@ -25,12 +25,12 @@
 
 	<div class="container">
 		<div class="row mt-5 mb-5">
-			<div class="col-lg-12 mt-5 ">
+			<div class="col-lg-6 mt-5 text-white ">
 				<form>
-					<div class="form-group mt-5">
+					<div class="form-group mt-5 ">
 						<label for="exampleInputEmail1">Email address</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email *">
+						<p id="emailHelp" class="form-text text-white">* We'll never share your email with anyone else.</p>
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword1">Password</label>

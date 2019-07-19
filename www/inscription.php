@@ -31,7 +31,7 @@ $database = new Database();
 
     <div class="container">
         <div class="row mt-5 mb-5">
-            <div class="col-lg-12 mt-5 ">
+            <div class="col-lg-12 mt-5 text-white ">
                 <h1>Pour pouvoir modifier ou ajouter des promenades, il vous faut un compte:</h1>
                 <form action="processInscription.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
