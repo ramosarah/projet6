@@ -10,13 +10,13 @@ require_once "database.php";
             <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse ml-5 " id="navbarTogglerDemo01">
-            <a class="navbar-brand logo text-white" href="index.php?liste"><i class="fas fa-walking fa-3x"></i></a>
+            <a class="navbar-brand logo text-white ml-5" href="index.php?liste"><i class="fas fa-walking fa-3x"></i></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
                 <li class="nav-item active ">
-                    <a class="nav-link text-white" href="index.php?#liste"><i class="fas fa-th-list"></i>Liste des promenades<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white ml-5" href="index.php?#liste"><i class="fas fa-th-list"></i>Liste des promenades<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="ajouterPromenade.php"><i class="fas fa-highlighter"></i>Ajouter votre promenade</a>
+                    <a class="nav-link text-white ml-5" href="ajouterPromenade.php"><i class="fas fa-highlighter"></i>Ajouter votre promenade</a>
                 </li>
                 
             </ul>

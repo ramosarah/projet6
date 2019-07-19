@@ -54,7 +54,7 @@ $promenade = $database->afficherPromenade($id);
 
 
 
-        <div class="texteAfficherPromenade">
+        <div class="texteAfficherPromenade pt-5">
 
             <h1>Détail de la promenade sélectionnée</h1><br>
 

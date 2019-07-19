@@ -62,11 +62,11 @@ $promenade = $database->searchBalade($search);
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Précédent</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Suivant</span>
         </a>
     </div>
 
@@ -84,12 +84,12 @@ $promenade = $database->searchBalade($search);
                             <img class='card-img img-fluid hoverable' src='<?php echo $ballade->getImg() ?>'>
 
                             <div class='card-body card-img-overlay mask flex rgba-black-strong'>
-                                <h1 class='card-title'><?php echo $ballade->getTitre() ?></h1>
+                                <h1 class='card-title purple-gradient'><?php echo $ballade->getTitre() ?></h1>
                                 <h4 class='card-title'><?php echo $ballade->getPays() ?></h4>
                                 <h4 class='card-title'><?php echo $ballade->getVille() ?></h4>
                                 <h2 class='card-title'><?php echo "Auteur: " . $ballade->getNom() ?></h2>
                                 <h6 class='card-title'><?php echo $ballade->getZip() ?></h6>
-                                <p class='card-text text-white'><?php echo $ballade->getDescr() ?></p><br>
+                                <p class='card-text purple-gradient'><?php echo $ballade->getDescr() ?></p><br>
                             </div>
                         </a>
                     </div>
