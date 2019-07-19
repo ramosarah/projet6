@@ -22,11 +22,7 @@ $promenade = $database->afficherPromenade($id);
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Afficher une promenade</title>
     <style>
-        .imgBg {
-            background-image: url("<?php echo $promenade->getImg() ?>");
-            background-size: cover;
-            background-position: center;
-        }
+        
     </style>
 
     <!-- Font Awesome -->
@@ -43,7 +39,7 @@ $promenade = $database->afficherPromenade($id);
 
 </head>
 
-<body class="form-bg">
+<body class="form-bg purple-gradient">
     <?php
     include("header.php");
     ?>

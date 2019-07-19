@@ -32,7 +32,7 @@ $promenade = $database->searchBalade($search);
 
 </head>
 
-<body>
+<body >
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=1542907162467456&autoLogAppEvents=1"></script>
 
@@ -72,7 +72,7 @@ $promenade = $database->searchBalade($search);
 
 
     <!-- Main -->
-    <div class="container-fluid" id="liste">
+    <div class="container-fluid purple-gradient" id="liste">
         <!-- Row -->
         <div class="row ">
             <?php foreach ($promenade as $ballade) { ?>
