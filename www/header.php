@@ -1,15 +1,13 @@
 <?php
 require_once "database.php";
-
-
 ?>
 
 
-    <nav class="nav navbar navbar-expand-lg navbar-light purple-gradient ">
-        <button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
+    <nav class="nav navbar navbar-expand-lg navbar-light purple-gradient sticky-top">
+        <button class="navbar-toggler white " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse ml-5 " id="navbarTogglerDemo01">
+        <div class="row collapse navbar-collapse ml-5 " id="navbarTogglerDemo01">
             <a class="navbar-brand logo text-white ml-5" href="index.php?liste"><i class="fas fa-walking fa-3x"></i></a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active ">

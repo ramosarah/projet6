@@ -22,7 +22,7 @@ $promenade = $database->afficherPromenade($id);
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Afficher une promenade</title>
     <style>
-        
+
     </style>
 
     <!-- Font Awesome -->
@@ -51,10 +51,16 @@ $promenade = $database->afficherPromenade($id);
 
 
     <div class="imgBg">
-
-
-
         <div class="texteAfficherPromenade pt-5">
+            <script>
+                var finished_rendering = function() {
+                    console.log("finished rendering plugins");
+                    var spinner = document.getElementById("spinner");
+                    spinner.removeAttribute("style");
+                    spinner.removeChild(spinner.childNodes[0]);
+                }
+                FB.Event.subscribe('xfbml.render', finished_rendering);
+            </script>
 
             <h1>Détail de la promenade sélectionnée</h1><br>
 
@@ -81,20 +87,6 @@ $promenade = $database->afficherPromenade($id);
             </p>
             <br>
             <br>
-
-
-
-
-
-            <script>
-                var finished_rendering = function() {
-                    console.log("finished rendering plugins");
-                    var spinner = document.getElementById("spinner");
-                    spinner.removeAttribute("style");
-                    spinner.removeChild(spinner.childNodes[0]);
-                }
-                FB.Event.subscribe('xfbml.render', finished_rendering);
-            </script>
 
             <div id="spinner justify-content-center " style="">Loading
                 <div class="fb-login-button " data-max-rows="1" data-size="large" data-button-type="continue_with" data-use-continue-as="true"></div>
