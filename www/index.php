@@ -32,7 +32,7 @@ $promenade = $database->searchBalade($search);
 
 </head>
 
-<body >
+<body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=1542907162467456&autoLogAppEvents=1"></script>
 
@@ -41,17 +41,18 @@ $promenade = $database->searchBalade($search);
     ?>
 
     <!-- carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <h1 class="titre text-center" style="">Les plus belles Promenades</h1>
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner ">
-            <div class="carousel-item active">
+            <div class="carousel-item active ">
                 <a href="afficherPromenade.php?id=2">
-                    <img class="d-block w-100 img-fluid hoverable" src="/assets/img/1.jpg" alt="First slide">
+                    <img class="d-block w-100 img-fluid hoverable " src="/assets/img/1.jpg" alt="First slide">
                 </a></div>
             <div class="carousel-item">
                 <img class="d-block w-100 img-fluid hoverable" src="/assets/img/2.jpg" alt="Second slide">

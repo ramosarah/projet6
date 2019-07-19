@@ -1,3 +1,13 @@
+.titre{
+    display: flex;
+    position: absolute ;
+    padding: 200px;
+    color: White;
+    font-family: roboto;
+    font-size: 5rem;
+    z-index: 1;
+}
+
 .card-body{
     color: blueviolet;
     text-emphasis-color: white;
