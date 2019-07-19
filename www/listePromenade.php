@@ -28,7 +28,7 @@ $promenade = $database->getAllprom();
     
 </head>
 
-<body>
+<body class="form-bg">
 
 
     <?php
