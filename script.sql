@@ -35,6 +35,22 @@ CREATE TABLE Promenades(
 );
 
 
+CREATE TABLE Membres(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255),
+    email VARCHAR(255),
+    pass VARCHAR(255)
+)
+
+
+INSERT INTO Membres (nom, email, pass) VALUE (
+    "Sophie",
+    "sophie@lechoix.com",
+    "lacroixdesophie"
+);
+
+
+
 SELECT * FROM Promenades WHERE id = $id
 
 

@@ -44,6 +44,28 @@ class Database {
         return $search;
     }
 
+
+
+    public function ajouterMembre($nom, $email, $pass) {
+        $pdoStatement = $this->connexion->prepare(
+            "INSERT INTO Membres(nom, email, pass)
+            VALUE (:paramNom, :paramEmail, :paramPass)");
+
+
+        $pdoStatement->execute(array(
+            "paramNom"=>$nom,
+            "paramEmail"=>$email,
+            "paramPass"=>$pass));
+
+            $id = $this->connexion->lastInsertId();
+            return $id;
+
+    }
+
+
+
+
+
     public function ajouterPromenade($nom, $titre, $img, $pays, $ville, $zip, $depart, $arrivee, $descr) {
         $pdoStatement = $this->connexion->prepare(
             "INSERT INTO Promenades(nom, titre, img, pays, ville, zip, depart, arrivee, descr)
@@ -72,14 +94,15 @@ class Database {
         $pdoStatement = $this->connexion->prepare(
             "SELECT * FROM Promenades WHERE id = :idProm"
         );
-    
-        
+
         $pdoStatement->execute(array("idProm" => $id));  
         
         $promenade = $pdoStatement->fetchObject('Promenade');
 
         return $promenade;
     }
+
+    
 
     public function getAllprom()
     {
