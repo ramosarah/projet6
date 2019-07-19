@@ -62,7 +62,7 @@ $promenade = $database->afficherPromenade($id);
 
             <h1>Détail de la promenade sélectionnée</h1><br>
 
-            <img style="width: 300px" class='img cover center' src='<?php echo $promenade->getImg() ?>'>
+            <img style="width: 500px" class='img cover center' src='<?php echo $promenade->getImg() ?>'>
             <br>
             <br>
             <p>
